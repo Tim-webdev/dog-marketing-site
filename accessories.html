@@ -8,11 +8,13 @@
 </head>
 <body>
   <header>
-    <h1>Upload Dog Accessory</h1>
-    <nav>
+    <div class="header-container">
+      <h1>Upload Dog Accessory</h1>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+    <nav id="mainNav">
       <a href="home.html">Home</a>
-      <a href="accessories.html">Accessories</a>
-      <a href="upload-accessory.html" class="active">Upload</a>
+      
     </nav>
   </header>
 
@@ -81,5 +83,11 @@
   </footer>
 
   <script src="js/accessories.js"></script>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("mainNav");
+      nav.classList.toggle("show");
+    }
+  </script>
 </body>
 </html>

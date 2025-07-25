@@ -9,7 +9,9 @@
 <body>
     <header>
     <h1>🐕 Dog Breeds</h1>
-    <nav>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="navLinks">
       <a href="index.html">Home</a>
       <a href="breeds.html">Breeds</a>
       <a href="services.html">Services</a>
@@ -138,7 +140,12 @@
   <footer>
     <p>&copy; 2025 Tim Kennel</p>
   </footer>
-  
+  <script>
+    function toggleMenu() {
+  const nav = document.querySelector("nav");
+  nav.classList.toggle("show");
+}
+  </script>
   <script src="js/script.js"></script>
 </body>
 </html>

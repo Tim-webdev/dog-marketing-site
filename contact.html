@@ -10,7 +10,9 @@
 
     <header>
     <h1>📞 Contact Us</h1>
-    <nav>
+     <!-- Hamburger -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="navLinks">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
@@ -32,7 +34,12 @@
   <footer>
     <p>&copy; 2025 Tim Kennel Site</p>
   </footer>
-
+  <script>
+    function toggleMenu() {
+  const nav = document.querySelector("nav");
+  nav.classList.toggle("show");
+}
+  </script>
   <script src="js/script.js"></script>
 </body>
 </html>
