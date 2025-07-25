@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Your Dog | Tim Kennel</title>
+  <link rel="stylesheet" href="css/upload.css" />
+</head>
+<script>
+  // Block access if not signed in
+  if (!localStorage.getItem('isSignedIn')) {
+    alert('You must sign in to upload a dog.');
+    window.location.href = 'signin.html';
+  }
+</script>
+<body>
+  <header>
+    <h1>📷 Upload Your Dog</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="breeds.html">Breeds</a>
+      <a href="upload.html">Upload</a>
+    </nav>
+  </header>
+
+  <section class="upload-form">
+    <h2>List Your Dog for Sale</h2>
+    <form id="dogUploadForm">
+      <input type="text" id="dogName" placeholder="Dog's Name" required />
+      <input type="text" id="breed" placeholder="Breed" required />
+      <input type="text" id="price" placeholder="Price (₦)" required />
+      <input type="text" id="location" placeholder="Location" required />
+      <select id="sex" required>
+        <option value="">Select Sex</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <input type="text" id="whatsapp" placeholder="WhatsApp Number" required />
+      <input type="url" id="videoLink" placeholder="YouTube/Facebook Video Link (optional)" />
+      <textarea id="description" placeholder="Short Description" required></textarea>
+
+      <label>Upload Dog Image:</label>
+      <input type="file" id="dogImage" accept="image/*" required />
+
+      <button type="submit">Upload</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tim Kennel</p>
+  </footer>
+
+  <script src="js/upload.js"></script>
+
+  <script>
+  if (!localStorage.getItem("isSignedIn")) {
+    alert("Please sign in before uploading.");
+    window.location.href = "signin.html";
+  }
+</script>
+</body>
+</html>

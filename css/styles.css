@@ -1,0 +1,405 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f9ff;
+  color: #333;
+}
+
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.name {
+  margin: 0 15px;
+}
+
+nav {
+  margin: 0 80px;
+}
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.overlay-content {
+  background-color: rgba(0, 0, 0, 0.5); /* dark transparent overlay */
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.overlay-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.overlay-content p {
+  font-size: 1.2rem;
+}
+
+/* .hero {
+  background: url('../bgc\ img.jpg') center/cover no-repeat;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+} */
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.services, .contact-form {
+  padding: 40px 20px;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+form button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 40px;
+}
+
+.breed-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.breed-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 280px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.breed-card:hover {
+  transform: scale(1.05);
+}
+
+.breed-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.breed-card button {
+  margin-top: 10px;
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Search Bar */
+
+.search-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-section input {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.breed-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.breed-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.breed-card img, .breed-card video {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* home slide */
+/* .slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.8s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0,0,0,0.8);
+} */
+
+/* Editted Version of the Home Page */
+
+.about, .social-media, .blog {
+  padding: 30px 10%;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.about p, .blog p, .social-media p {
+  line-height: 1.7;
+  color: #333;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.social-media li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.social-media a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.blog-posts .post {
+  flex: 1 1 30%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.blog-posts .post img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-posts .post h4 {
+  margin: 10px;
+  font-size: 18px;
+}
+
+.blog-posts .post p {
+  margin: 0 10px 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Chat bubble icon */
+/* .chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0077cc;
+  color: #fff;
+  font-size: 24px;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+} */
+
+/* Whatsapp Icon */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #25D366;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.contact-button{
+  color: white;
+  background: white;
+}
+
+.chat-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+
+/* Header styling with logo */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 10%;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-container img {
+  height: 60px;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-container .site-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

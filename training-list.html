@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dog Training Services</title>
+  <link rel="stylesheet" href="css/training.css" />
+</head>
+<body>
+  <header>
+    <h1>🐾 Dog Training Services</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      
+    </nav>
+  </header>
+
+  <section id="trainingList" class="training-list">
+    <!-- Dynamic content will appear here -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tim Kennel</p>
+  </footer>
+
+  <script>
+    const trainingList = document.getElementById("trainingList");
+    const trainings = JSON.parse(localStorage.getItem("dogTrainings") || "[]");
+
+    if (trainings.length === 0) {
+      trainingList.innerHTML = "<p>No training services uploaded yet.</p>";
+    } else {
+      trainings.forEach(t => {
+        const card = document.createElement("div");
+        card.className = "training-card";
+
+        card.innerHTML = `
+          <h3>${t.trainingTitle}</h3>
+          <p><strong>Trainer:</strong> ${t.trainerName}</p>
+          <p><strong>Type:</strong> ${t.trainingType}</p>
+          <p><strong>Duration:</strong> ${t.duration}</p>
+          <p><strong>Format:</strong> ${t.format}</p>
+          <p><strong>Price:</strong> ₦${t.price}</p>
+          <p><strong>Description:</strong> ${t.description}</p>
+          <div class="media">
+            ${t.media.map(src => {
+              if (src.startsWith("data:video")) {
+                return `<video controls width="100%"><source src="${src}" type="video/mp4"></video>`;
+              } else {
+                return `<img src="${src}" alt="Training Media" />`;
+              }
+            }).join("")}
+          </div>
+          <p><strong>Contact:</strong> ${t.trainerPhone} | ${t.trainerEmail}</p>
+        `;
+
+        trainingList.appendChild(card);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* dog-training.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f9ff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.training-form {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #e8f0ff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.training-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.training-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.training-form label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.training-form input,
+.training-form textarea,
+.training-form select {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.training-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.training-form input[type="file"] {
+  border: none;
+}
+
+.training-form button {
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.training-form button:hover {
+  background-color: #45a049;
+}
+
+.image-preview {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.image-preview img,
+.image-preview video {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 40px;
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 600px) {
+  .training-form {
+    padding: 20px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Training List */
+
+.training-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 1.5rem;
+  justify-content: center;
+}
+
+.training-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 320px;
+}
+
+.training-card img,
+.training-card video {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 6px;
+}

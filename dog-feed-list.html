@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dog Feed Listings</title>
+  <link rel="stylesheet" href="css/dog-feed.css" />
+</head>
+<body>
+  <header>
+    <h1>Dog Feed Products</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="dog-feed.html">Upload Feed</a>
+    </nav>
+  </header>
+
+  <section class="feed-display" id="feedContainer"></section>
+
+  <footer>
+    <p>&copy; 2025 Tim Kennel</p>
+  </footer>
+
+  <script>
+    const container = document.getElementById("feedContainer");
+    const feeds = JSON.parse(localStorage.getItem("dogFeeds") || "[]");
+
+    if (feeds.length === 0) {
+      container.innerHTML = "<p>No dog feeds listed yet.</p>";
+    } else {
+      feeds.forEach(feed => {
+        const card = document.createElement("div");
+        card.className = "feed-card";
+
+        card.innerHTML = `
+          <img src="${feed.image}" alt="${feed.feedName}" />
+          <h3>${feed.feedName}</h3>
+          <p><strong>Type:</strong> ${feed.feedType}</p>
+          <p><strong>Age:</strong> ${feed.ageCategory}</p>
+          <p><strong>Breed Size:</strong> ${feed.breedSize}</p>
+          <p><strong>Purpose:</strong> ${feed.purpose}</p>
+          <p><strong>Price:</strong> ${feed.price}</p>
+          <p><strong>Weight:</strong> ${feed.weight}</p>
+          <p><strong>Brand:</strong> ${feed.brand || "N/A"}</p>
+          <p><strong>Stock:</strong> ${feed.quantity}</p>
+          <p><strong>Description:</strong> ${feed.description}</p>
+        `;
+        container.appendChild(card);
+      });
+    }
+  </script>
+</body>
+</html>

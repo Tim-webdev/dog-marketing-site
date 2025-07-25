@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Update Profile - Tim Kennel</title>
+  <link rel="stylesheet" href="css/profile.css" />
+</head>
+<body>
+  <header>
+    <h1>Update Profile</h1>
+  </header>
+
+  <section class="profile-update-section">
+    <form id="updateProfileForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" placeholder="Enter your full name" required />
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter your username" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required />
+
+      <label for="password">New Password:</label>
+      <input type="password" id="password" placeholder="Enter new password" />
+
+      <label for="profilePic">Upload Profile Picture:</label>
+      <input type="file" id="profilePic" accept="image/*" />
+
+      <button type="submit">Update Profile</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Abuja Kennel</p>
+  </footer>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>

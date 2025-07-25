@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Feed Upload</title>
+  <link rel="stylesheet" href="css/dog-feed.css" />
+</head>
+<body>
+  <header>
+    <h1>Upload Dog Feed</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="training.html">Training</a>
+      <a href="vet-doctor.html">Vet Doctor</a>
+      <a href="dog-feed.html" class="active">Dog Feed</a>
+    </nav>
+  </header>
+
+  <section class="feed-form">
+    <h2>List a Dog Feed Product</h2>
+    <form id="dogFeedForm">
+      <input type="text" placeholder="Feed Name / Product Title" required />
+
+      <label>Feed Type</label>
+      <select required>
+        <option value="">-- Select Type --</option>
+        <option>Dry Food (Kibble)</option>
+        <option>Wet Food (Canned)</option>
+        <option>Raw Food</option>
+        <option>Homemade/Organic</option>
+        <option>Treats & Biscuits</option>
+        <option>Supplements</option>
+      </select>
+
+      <label>Dog Age Category</label>
+      <select required>
+        <option value="">-- Select Age Category --</option>
+        <option>Puppy</option>
+        <option>Adult</option>
+        <option>Senior</option>
+        <option>All Ages</option>
+      </select>
+
+      <label>Breed Size Compatibility</label>
+      <select required>
+        <option value="">-- Select Breed Size --</option>
+        <option>Small Breed</option>
+        <option>Medium Breed</option>
+        <option>Large Breed</option>
+        <option>All Sizes</option>
+      </select>
+
+      <label>Feed Category / Purpose</label>
+      <select required>
+        <option value="">-- Select Purpose --</option>
+        <option>Daily Nutrition</option>
+        <option>Weight Control</option>
+        <option>High Energy</option>
+        <option>Hypoallergenic</option>
+        <option>Dental Care</option>
+        <option>Skin & Coat Health</option>
+      </select>
+
+      <input type="text" placeholder="Price (e.g. 5000 NGN per pack)" required />
+      <input type="text" placeholder="Weight / Package Size (e.g. 7kg pack)" required />
+      <input type="text" placeholder="Brand Name (Optional)" />
+      <input type="number" placeholder="Quantity Available" required />
+      <textarea placeholder="Short Description (ingredients, nutrition, etc.)" required></textarea>
+
+      <label>Upload Product Image</label>
+      <input type="file" accept="image/*" required />
+
+      <button type="submit">Upload Feed</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tim Kennel. All rights reserved.</p>
+  </footer>
+
+  <script src="js/dog-feed.js"></script>
+</body>
+</html>

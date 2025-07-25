@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Accessories Gallery - Tim Kennel</title>
+  <link rel="stylesheet" href="css/accessories.css" />
+</head>
+<body>
+  <header>
+    <h1>🐶 Accessories Gallery</h1>
+    <nav>
+      <a href="index.html">Home</a>
+     
+    </nav>
+  </header>
+
+  <section class="accessory-list" id="accessoryList">
+    <!-- Accessories will be inserted here -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tim Kennel</p>
+  </footer>
+
+  <script>
+    const accessories = JSON.parse(localStorage.getItem("accessories") || "[]");
+    const listContainer = document.getElementById("accessoryList");
+
+    if (accessories.length === 0) {
+      listContainer.innerHTML = "<p>No accessories uploaded yet.</p>";
+    } else {
+      accessories.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "accessory-card";
+
+        card.innerHTML = `
+          <h3>${item.title}</h3>
+          <p><strong>Category:</strong> ${item.category}</p>
+          <p><strong>Price:</strong> ₦${item.price}</p>
+          <p><strong>Description:</strong> ${item.description}</p>
+          <div class="images">
+            ${item.images.map(img => `<img src="${img}" alt="${item.title}" />`).join("")}
+          </div>
+        `;
+
+        listContainer.appendChild(card);
+      });
+    }
+  </script>
+</body>
+</html>

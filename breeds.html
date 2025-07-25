@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Site</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+    <h1>🐕 Dog Breeds</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="breeds.html">Breeds</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="upload.html">Upload</a>
+    </nav>
+  </header>
+   <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search for dog name or breed..." />
+  </section>
+
+  <section class="breed-gallery" id="dogListings">
+    <!-- JavaScript will populate this -->
+  </section>
+
+  <section class="breed-gallery">
+    <div class="breed-card">
+      <img src="images/Rottweir.jpeg" alt="Rottweir">
+      <h3>Rottweir</h3>
+      <p>Strong, confident, and protective — the Rottweiler is a powerful guardian and a loving family dog. With proper training, they become loyal companions and excellent working dogs.</p>
+      <button onclick="buyBreed('Rottweir')">Adopt Now</button>
+    </div>
+    <div class="breed-card">
+      <img src="images/German Shepard.jpeg" alt="German Shepard">
+      <h3>German Shepherd</h3>
+      <p>Loyal, intelligent, and courageous — the German Shepherd is one of the world’s most versatile dog breeds. Whether serving in the military, protecting a home, or playing with kids, this breed is known for its obedience and devotion. A true all-purpose dog that excels in work and family life.</p>
+      <button onclick="buyBreed('German Shepard')">Buy Now</button>
+    </div>
+    <div class="breed-card">
+      <img src="images/husky.webp" alt="Husky">
+      <h3>Husky</h3>
+      <p>Known for their striking blue eyes and wolf-like appearance, Huskies are energetic, friendly, and love to run. A great fit for active families who enjoy the outdoors.</p>
+      <button onclick="buyBreed('Husky')">Buy Now</button>
+    </div>
+    <div class="breed-card">
+      <img src="images/Lhassa.jpg" alt="Lhassa">
+      <h3>Lhassa Apso</h3>
+      <p>Small but mighty, the Lhasa Apso is known for its long, flowing coat and watchful nature. Originally bred to guard monasteries in Tibet, this breed is loyal, alert, and full of personality.</p>
+      <button onclick="buyBreed('Lhassa')">Buy Now</button>
+    </div>
+
+
+
+    <div class="breed-card">
+      <img src="images/pitbul.jpeg" alt="pitbul">
+      <h3>pitbul</h3>
+      <p>Often misunderstood, Pit Bulls are loyal, energetic, and affectionate. With proper socialization, they make amazing family pets with tons of personality.</p>
+      <button onclick="buyBreed('pitbul')">Buy Now</button>
+    </div>
+    <div class="breed-card">
+      <img src="images/Caucasian Shepherd.webp" alt="Caucasian" >
+      <h3>Caucasian</h3>
+      <p>Also called the Caucasian Ovcharka, this massive breed is fearless and protective. Bred to guard livestock, it's a natural watchdog with a heart for its family.</p>
+      <button onclick="buyBreed('Caucasian')">Buy Now</button>
+    </div>
+    <div class="breed-card">
+      <img src="images/ESkimo.jpeg" alt="ESkimo">
+      <h3>American Eskimo</h3>
+      <p>Fluffy, white, and full of charm! The American Eskimo is smart, playful, and loves being the center of attention. Great for families looking for a lively companion.</p>
+      <button onclick="buyBreed('Eskimo')">Buy Now</button>
+    </div>
+    <div class="breed-card">
+      <img src="images/pomerian.jpeg" alt="pomeranian">
+      <h3>Pomeranian</h3>
+      <p>Tiny in size, huge in personality! Pomeranians are curious, bold, and incredibly cute. Their fox-like faces and fluffy coats make them an instant favorite.</p>
+      <button onclick="buyBreed('pomeranian')">Buy Now</button>
+    </div>
+
+    <div class="breed-card">
+      <img src="images/Boerboel.jpg" alt="Boerboel">
+      <h3>Boerboel</h3>
+      <p>This South African powerhouse is both protective and affectionate. Boerboels are great with kids and excellent home guardians — brave, loyal, and surprisingly gentle.</p>
+      <button onclick="buyBreed('Boerboel')">Buy Now</button>
+    </div>
+
+    <div class="breed-card">
+      <img src="images/doberman pinscher.jpg" alt="doberman">
+      <h3>Doberman Pinscher</h3>
+      <p>Sleek, powerful, and fearless — the Doberman Pinscher is the ultimate guardian. Known for their loyalty and sharp intelligence, Dobermans are protective family dogs and excellent working companions. With proper training, they’re both elegant and affectionate.</p>
+      <button onclick="buyBreed('pomeranian')">Buy Now</button>
+    </div>
+
+     <div class="breed-card">
+      <img src="images/canecorso.png" alt="canecorso">
+      <h3>canecorso</h3>
+      <p>A muscular Italian mastiff bred for protection. The Cane Corso is intelligent, obedient, and thrives in a home where it can be both a protector and a loving pet.</p>
+      <button onclick="buyBreed('canecorso')">Buy Now</button>
+     </div>
+
+      <div class="breed-card">
+      <img src="images/malinois.jpg" alt="malinois">
+      <h3>Belgian Malinois</h3>
+      <p>Highly intelligent and driven, the Belgian Malinois is a favorite among police and military. Loyal and trainable, they excel in active homes that offer mental stimulation.</p>
+      <button onclick="buyBreed('malinois')">Buy Now</button>
+    </div>
+
+    <div class="breed-card">
+      <img src="images/pug.jpeg" alt="pug">
+      <h3>Pug</h3>
+      <p>With their wrinkled faces and loving nature, Pugs are clowns at heart. They're easygoing, affectionate, and thrive in both small apartments and big homes.</p>
+      <button onclick="buyBreed('pug')">Buy Now</button>
+    </div>
+
+    <div class="breed-card">
+      <img src="images/chowchow.webp" alt="chowchow">
+      <h3>Chow Chow</h3>
+      <p>With their lion-like mane and dignified presence, Chow Chows are calm and independent. They’re quiet companions who form strong bonds with their family.</p>
+      <button onclick="buyBreed('chowchow')">Buy Now</button>
+    </div>
+
+    <div class="breed-card">
+      <img src="images/frenchie.jpeg" alt="frenchie">
+      <h3>French BullDog (Frenchie)</h3>
+      <p>Playful, charming, and low-maintenance, Frenchies are city favorites. Their big ears and lovable snorts make them one of the most popular small breeds worldwide.</p>
+      <button onclick="buyBreed('frenchie')">Buy Now</button>
+    </div>
+    <!-- Add more breed cards as needed -->
+  </section>
+
+  <section class="breed-gallery" id="dogListings">
+    <h2>Community Uploads</h2>
+    <!-- JavaScript will inject uploaded dogs here -->
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Tim Kennel</p>
+  </footer>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

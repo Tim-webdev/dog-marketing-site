@@ -1,0 +1,114 @@
+ body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f4f9ff;
+      color: #333;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    .accessory-form {
+      max-width: 700px;
+      margin: 30px auto;
+      background: #eef;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .accessory-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .accessory-form label {
+      font-weight: bold;
+    }
+
+    .accessory-form input,
+    .accessory-form textarea,
+    .accessory-form select {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      font-size: 16px;
+    }
+
+    .accessory-form button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #imagePreview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    #imagePreview img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 40px;
+    }
+
+    /* Accessories List */
+
+    .accessory-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.accessory-card {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.accessory-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 10px;
+  object-fit: cover;
+}

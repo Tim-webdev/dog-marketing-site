@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Dog Training Service</title>
+  <link rel="stylesheet" href="css/training.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 Upload Dog Training Service</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="upload-training.html">Dog Training</a>
+    </nav>
+  </header>
+
+  <section class="upload-form">
+    <h2>Register Your Dog Training Service</h2>
+    <form id="dogTrainingForm">
+      <input type="text" id="trainingTitle" placeholder="Training Title / Service Name" required />
+      <input type="text" id="trainerName" placeholder="Trainer / Business Name" required />
+
+      <label for="trainingType">Training Type:</label>
+      <select id="trainingType" required>
+        <option value="">--Select Type--</option>
+        <option>Obedience Training</option>
+        <option>Puppy Training</option>
+        <option>Behavior Correction</option>
+        <option>Guard Dog Training</option>
+        <option>Service Dog Training</option>
+        <option>Agility Training</option>
+        <option>Potty Training</option>
+        <option>Advanced Commands</option>
+        <option>Leash Training</option>
+      </select>
+
+      <textarea id="description" placeholder="Description of the Training" required></textarea>
+      <input type="text" id="duration" placeholder="Training Duration (e.g. 4 weeks)" required />
+
+      <label for="format">Training Format:</label>
+      <select id="format" required>
+        <option value="">--Select Format--</option>
+        <option>In-Person (Home or Center)</option>
+        <option>Online/Virtual</option>
+        <option>Group Class</option>
+        <option>One-on-One</option>
+      </select>
+
+      <input type="text" id="location" placeholder="Training Location (if physical)" />
+      <input type="text" id="price" placeholder="Price" required />
+
+      <label for="ageRange">Dog Age Range:</label>
+      <select id="ageRange" required>
+        <option value="">--Select--</option>
+        <option>Puppies (8 weeks–6 months)</option>
+        <option>Adult Dogs</option>
+        <option>All Ages</option>
+      </select>
+
+      <input type="text" id="breedCompatibility" placeholder="Breed Compatibility (optional)" />
+
+      <label for="dogSize">Dog Size Accepted:</label>
+      <select id="dogSize" required>
+        <option value="">--Select--</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>All Sizes</option>
+      </select>
+
+      <textarea id="trainerBio" placeholder="Trainer Profile / Bio" required></textarea>
+
+      <input type="tel" id="trainerPhone" placeholder="Trainer Phone Number" required />
+      <input type="email" id="trainerEmail" placeholder="Trainer Email" required />
+      <input type="text" id="trainerWhatsApp" placeholder="WhatsApp (optional)" />
+      <input type="text" id="trainerSocial" placeholder="Social Media Handles" />
+
+      <label for="media">Upload Images or Training Video:</label>
+      <input type="file" id="media" accept="image/*,video/*" multiple required />
+
+      <input type="date" id="startDate" required />
+
+      <button type="submit">Upload Training</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tim Kennel</p>
+  </footer>
+
+  <script src="js/training.js"></script>
+</body>
+</html>
