@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-     <div class="logo-container">
+  <div class="logo-container">
     <a href="index.html">
       <img src="images/Timkennel LOGO.png" alt="Tim Kennel Logo" id="kennel-logo">
   
@@ -16,7 +16,12 @@
 
 
     <h1 class="name">TimKennel</h1>
-    <nav>
+    
+    
+  <!-- Hamburger -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+    <nav id="navLinks">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
@@ -107,6 +112,13 @@ window.CRISP_WEBSITE_ID = "your_crisp_id_here";
   s.async = 1;
   d.getElementsByTagName("head")[0].appendChild(s);
 })();
+</script>
+
+<script>
+  function toggleMenu() {
+  const nav = document.querySelector("nav");
+  nav.classList.toggle("show");
+}
 </script>
   <script src="js/script.js"></script>
 </body>

@@ -403,3 +403,50 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+/* Hamburger Toggle Button */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
+  padding-left: 20px;
+}
+
+/* Make header responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5%;
+  }
+
+  .logo-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0 0;
+    background-color: #0077cc;
+    padding: 10px 0;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav a {
+    padding: 10px 20px;
+    margin: 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+}
